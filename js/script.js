@@ -24,8 +24,8 @@ $(function() {
             var $column = $('<div>').addClass('column');
             var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
             var $columnCardList = $('<ul>').addClass('column-card-list');
-            var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-            var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
+            var $columnDelete = $('<button>').addClass('btn-delete btn').text('x');
+            var $columnAddCard = $('<button>').addClass('add-card btn').text('Add a card');
         
             // ADDING EVENTS
             $columnDelete.click(function() {
@@ -68,7 +68,7 @@ function Card(description) {
          //Card elements
         var $card = $('<li>').addClass('card');
         var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-        var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+        var $cardDelete = $('<button>').addClass('btn-delete btn').text('x');
 
         //Card Events - delete card
         $cardDelete.click(function () {
@@ -100,7 +100,7 @@ function Card(description) {
         //Card elements
         var $card = $('<li>').addClass('card');
         var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-        var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+        var $cardDelete = $('<button>').addClass('btn-delete btn').text('x');
 
         //Card Events - delete card
         $cardDelete.click(function () {
